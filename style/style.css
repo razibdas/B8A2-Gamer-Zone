@@ -133,50 +133,88 @@ nav {
 
 
 /* second banner start */
-.banner-image {
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    margin: 50px auto 0;
-    max-width: 1400px;
-    min-height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-}
-
-.text-edite {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.items{
+.items {
     text-align: center;
 }
 
-.service-img{
+.service-img {
     display: flex;
     justify-content: center;
     gap: 18px;
 }
-.service-container img:hover{
+
+.service-container img:hover {
     opacity: 0.5;
 }
-.feature{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 130px;
-   gap: 300px;
+
+.items {
+    text-align: center;
 }
-.feature .feature-title{
-    padding: 30px;
-    margin-bottom: 20px;
+
+.feature {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    gap: 100px;
+    align-items: center;
+}
+
+.feature-img .left {
+    height: 90%;
+    margin-left: 100px;
+}
+
+.badge {
+    margin: 0;
+    position: relative;
+    bottom: 160px;
 
 }
 
+.games {
+    display: flex;
+    gap: 10px;
+}
+
+.sponsor-image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.arcade {
+    display: flex;
+    gap: 10px;
+
+}
+
+.custom {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 100px;;
+}
+.footer-section {
+    
+}
+
+.logo-container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.list-item {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 60px;
+}
 
 
 
@@ -190,14 +228,21 @@ nav {
 
     .nav-container,
     .nav-items-container,
-    .banner-container, .banner-image, .feature, .service-img{
+    .banner-container,
+    .banner-image,
+    .feature,
+    .service-img {
         flex-direction: column;
     }
 
 
-    .feature-img img{
-        width: 100%;
+    .feature-img img {
+        width: 70%;
     }
+    .badge img{
+        width: 50%;
+    }
+
     .logo-container img {
         width: 100%;
     }
@@ -210,12 +255,15 @@ nav {
     .banner-buttons {
         margin-top: 10px;
     }
-
-    }
-    .banner-image img{
+    .banner-image img {
         width: 90%;
     }
-    .feature{
-        gap: 0px;
+    .sponsor-image-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+    .customs-container, .custom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
