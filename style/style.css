@@ -17,9 +17,9 @@ nav {
 .nav-container {
     min-height: 50px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
-    /* max-width: 1400px; */
+    max-width: 1400px;
     margin: 0 auto;
    
 }
@@ -27,15 +27,16 @@ nav {
 .logo-container {
     display: flex;
     width: 50%;
+    
 }
 
 .text-color {
     color: #FF42A5;
 }
 
-.logo-container img {
+.logo-container .logo-image {
     margin-right: 20px;
-    width: 86px;
+    width: 50px;
     height: auto;
 }
 
@@ -172,73 +173,53 @@ nav {
     bottom: 160px;
 
 }
-
-.games {
+.games{
     display: flex;
     gap: 10px;
 }
-
-.sponsor-image-container {
+.sponsor-image-container{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+
 }
-
-
-
-.arcade {
+.arcade{
     display: flex;
     gap: 10px;
-
 }
-
-.custom {
+.custom{
     display: flex;
     justify-content: center;
-    gap: 70px;
-    margin-top: 100px;
-    ;
+    margin-top: 60px;
 }
 
-.footer-section {}
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-.list-item {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    gap: 60px;
-}
+
+/* footer section */
+
 
 .footer {
     width: 2000px;
     height: 636px;
     background-color: #0B0223;
     margin: 50px auto;
+    color: white;
 }
 .footer-container{
     display: flex;
-    margin: 0 auto;
     justify-content: center;
- 
-}
-.footer{
-    color: white;
     text-align: center;
-    align-items: center;
+    padding-top: 100px;
 }
+
+
 div>ul{
     display: flex;
     list-style: none;
     justify-content: center;
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .best-icon{
     display: flex;
@@ -249,6 +230,14 @@ div>ul{
 }
 .end{
     margin-top: 60px;
+    display: flex;
+    justify-content: center;   
+}
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 60px;
 }
 
 
@@ -258,8 +247,8 @@ div>ul{
 
 
 
-@media screen and (max-width: 576px) {
 
+@media screen and (max-width: 576px) {
     .nav-container,
     .nav-items-container,
     .banner-container,
@@ -269,10 +258,15 @@ div>ul{
         flex-direction: column;
     }
 
-    }
     
     .feature-img img {
-        width: 65%;
+        width: 60%;
+    }
+    .feature-title p{
+        font-size: 15px;
+    }
+    .feature-title h1{
+        font-size: 15px;
     }
 
     .badge img {
@@ -301,6 +295,10 @@ div>ul{
     .sponsor-image-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .games p{
+        font-size: 12px;
     }
 
     .customs-container,
@@ -308,11 +306,13 @@ div>ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .custom img{
+    .custom, .arcade img{
         width: 100%;
+        gap: 80px;
     }
+    
     .footer{
-        width: 100%;
+        width: 90%;
     }
     div>ul{
         display: grid;
@@ -323,6 +323,7 @@ div>ul{
         grid-template-columns: repeat(3, 1fr);
     }
     .service-title img{
-        width: 100%;
+        width: 95%;
     }
 }
+
