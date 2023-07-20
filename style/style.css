@@ -145,6 +145,19 @@ nav {
     justify-content: center;
     gap: 18px;
 }
+.image-containers{
+    position: relative;
+    display: inline-block;
+}
+.play-icon{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+
+}
+
 
 .service-container img:hover {
     opacity: 0.5;
@@ -177,6 +190,10 @@ nav {
     display: flex;
     gap: 10px;
 }
+.games:hover{
+    border: 1px solid gray;
+    border-radius: 25px;
+}
 .sponsor-image-container{
     display: flex;
     justify-content: center;
@@ -186,6 +203,10 @@ nav {
 .arcade{
     display: flex;
     gap: 10px;
+}
+.arcade:hover{
+    border: 1px solid gray;
+    border-radius: 25px;
 }
 .custom{
     display: flex;
@@ -247,7 +268,6 @@ div>ul{
 
 
 
-
 @media screen and (max-width: 576px) {
     .nav-container,
     .nav-items-container,
@@ -300,7 +320,7 @@ div>ul{
     .games p{
         font-size: 12px;
     }
-
+    
     .customs-container,
     .custom {
         display: grid;
@@ -310,6 +330,7 @@ div>ul{
         width: 100%;
         gap: 80px;
     }
+
     
     .footer{
         width: 90%;
